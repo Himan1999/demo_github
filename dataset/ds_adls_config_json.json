@@ -1,0 +1,36 @@
+{
+	"name": "ds_adls_config_json",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_adls_raw_storage",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Json",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": "config.json",
+				"fileSystem": "config"
+			}
+		},
+		"schema": {
+			"type": "object",
+			"properties": {
+				"baseURl": {
+					"type": "string"
+				},
+				"relativeURl": {
+					"type": "string"
+				},
+				"fileName": {
+					"type": "string"
+				},
+				"fileType": {
+					"type": "string"
+				}
+			}
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

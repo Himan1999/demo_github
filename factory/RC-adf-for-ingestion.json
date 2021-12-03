@@ -1,0 +1,9 @@
+{
+	"name": "RC-adf-for-ingestion",
+	"location": "centralindia",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "779f6f49-eda7-49c5-8e4e-2c28e34e8c29",
+		"tenantId": "e6fcb01a-f706-4b1b-872b-1e7645d78491"
+	}
+}

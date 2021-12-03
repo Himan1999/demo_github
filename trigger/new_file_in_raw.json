@@ -1,0 +1,24 @@
+{
+	"name": "new_file_in_raw",
+	"properties": {
+		"annotations": [],
+		"runtimeState": "Stopped",
+		"pipelines": [
+			{
+				"pipelineReference": {
+					"referenceName": "pl_bronze_files",
+					"type": "PipelineReference"
+				}
+			}
+		],
+		"type": "BlobEventsTrigger",
+		"typeProperties": {
+			"blobPathBeginsWith": "/raw/blobs/",
+			"ignoreEmptyBlobs": true,
+			"scope": "/subscriptions/f2b3def1-f451-4983-a418-05a50ac9ad75/resourceGroups/training_RC/providers/Microsoft.Storage/storageAccounts/saforingestion",
+			"events": [
+				"Microsoft.Storage.BlobCreated"
+			]
+		}
+	}
+}
